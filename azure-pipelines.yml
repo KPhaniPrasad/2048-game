@@ -20,10 +20,8 @@ steps:
 
 - task: Kubernetes@1
   inputs:
-    connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: 'Free Trial(90551aaf-c894-48b9-b16f-dbff2cefb986)'
-    azureResourceGroup: 'Hellotestdev'
-    kubernetesCluster: 'python'
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'kubernetes'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
