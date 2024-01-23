@@ -8,7 +8,7 @@ steps:
 
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Towards-AzurePortal'
+    azureSubscription: 'Free Trial(90551aaf-c894-48b9-b16f-dbff2cefb986)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
