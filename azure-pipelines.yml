@@ -21,7 +21,7 @@ steps:
 - task: Kubernetes@1
   inputs:
     connectionType: 'Kubernetes Service Connection'
-    kubernetesServiceEndpoint: 'kubernetes'
+    kubernetesServiceEndpoint: '2048-game'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
@@ -29,5 +29,5 @@ steps:
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
     azureSubscriptionEndpointForSecrets: 'Free Trial(90551aaf-c894-48b9-b16f-dbff2cefb986)'
-    azureContainerRegistry: 'myacrrepo421.azurecr.io'
+    azureContainerRegistry: 'testtting.azurecr.io'
     forceUpdate: false
