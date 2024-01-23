@@ -12,9 +12,9 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      docker build -t myacrrepo421.azurecr.io/web-game:tag 2048-game
-      az acr login -n myacrrepo421
-      docker push myacrrepo421.azurecr.io/web-game:tag
+      docker build -t testtting.azurecr.io/web-game:tag 2048-game
+      az acr login -n testtting
+      docker push testtting.azurecr.io/web-game:tag
 
 - script: cat 01_kubernetes_aks/app-deploy.yaml
 
