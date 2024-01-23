@@ -12,18 +12,18 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
-      docker build -t mylabacr13.azurecr.io/web-game:tag 2048-game
-      az acr login -n mylabacr13
-      docker push mylabacr13.azurecr.io/web-game:tag
+      docker build -t myacrrepo421.azurecr.io/web-game:tag 2048-game
+      az acr login -n myacrrepo421
+      docker push myacrrepo421.azurecr.io/web-game:tag
 
 - script: cat 01_kubernetes_aks/app-deploy.yaml
 
 - task: Kubernetes@1
   inputs:
     connectionType: 'Azure Resource Manager'
-    azureSubscriptionEndpoint: 'Towards-AzurePortal'
-    azureResourceGroup: 'TestLab-RG'
-    kubernetesCluster: 'testlab-aks'
+    azureSubscriptionEndpoint: 'Free Trial(90551aaf-c894-48b9-b16f-dbff2cefb986)'
+    azureResourceGroup: 'Hellotestdev'
+    kubernetesCluster: 'python'
     namespace: 'default'
     command: 'apply'
     useConfigurationFile: true
