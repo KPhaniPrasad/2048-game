@@ -29,5 +29,5 @@ steps:
     secretType: 'dockerRegistry'
     containerRegistryType: 'Azure Container Registry'
     azureSubscriptionEndpointForSecrets: 'Free Trial(90551aaf-c894-48b9-b16f-dbff2cefb986)'
-    azureContainerRegistry: 'testtting.azurecr.io'
+    azureContainerRegistry: '2048gameacr.azurecr.io'
     forceUpdate: false
