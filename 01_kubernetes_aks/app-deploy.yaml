@@ -21,7 +21,7 @@ spec:
         "kubernetes.io/os": linux
       containers:
       - name: web-game
-        image: testtting.azurecr.io/web-game:tag
+        image: 2048gameacr.azurecr.io/web-game:tag
         ports:
         - containerPort: 80
         resources:
